@@ -1,0 +1,96 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("🌃 True Scripts | !True#0001 🌃", colors)
+
+local colors = {
+   SchemeColor = Color3.fromRGB(255, 0, 0),
+   Background = Color3.fromRGB(0, 0, 0),
+   Header = Color3.fromRGB(85, 255, 127),
+   TextColor = Color3.fromRGB(255,255,255),
+   ElementColor = Color3.fromRGB(0, 0, 0)
+}
+
+
+--Home Tab
+
+local Home = Window:NewTab("Home")
+local HomeSection = Home:NewSection("⭐{.gg/FwJvrN9J84}⭐")
+
+HomeSection:NewLabel("This GUI is made by !True#0001")
+HomeSection:NewLabel("Updating regularly with new scripts!")
+
+
+--Universal Tab
+
+local Main = Window:NewTab("Universal")
+local MainSection = Main:NewSection("Universal GUI'S")
+
+MainSection:NewButton("Infinite yield", "Executes Infinite yield.", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+MainSection:NewToggle("Walkspeed On/Off", "Toggles walkspeed", function(state)
+   if state then
+      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+   else
+      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+   end
+end)
+
+
+--Da hood tab
+
+local DaHood = Window:NewTab("Da hood")
+local DaHoodSection = DaHood:NewSection("Da Hood GUI'S")
+
+DaHoodSection:NewButton("Swagmode", "Executes Swagmode for Da Hood!", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()
+end)
+
+DaHoodSection:NewButton("Faded", "Executes Faded for Da Hood!", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+end)
+
+DaHoodSection:NewButton("Destiny", "Executes Destiny for Da Hood!", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/compwnter/destiny/main/loader"))()
+end)
+
+DaHoodSection:NewButton("Da Hub v.3", "Executes Da Hub v.3 for Da Hood!", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/NoUGotbannedlol/DaHubV3/main/Launch"))()
+end)
+
+DaHoodSection:NewButton("Ray X", "Executes Ray X for Da Hood!", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()
+end)
+
+--MM2 Tab
+
+local MurderMystery = Window:NewTab("Murder Mystery")
+local MurderMysterySection = MurderMystery:NewSection("Murder Mystery GUI'S")
+
+MurderMysterySection:NewButton("ECLIPSE HUB", "Executes ECLIPSE HUB For murder mystery!", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script", true))()
+end)
+
+
+--Bee Swarm Simulator Tab
+
+local Bee = Window:NewTab("Bee Swarm Simulator")
+local BeeSection = Bee:NewSection("Bee swarm simulator GUI'S")
+
+BeeSection:NewButton("Kometa", "Executes kometa For Bee swarm simulator!", function()
+   loadstring(game:HttpGet('https://s.kometa.pw/kometa.lua'))()
+end)
+
+--Arsenal Tab
+
+local Arsenal = Window:NewTab("Arsenal")
+local ArsenalSection = Arsenal:NewSection("Arsenal GUI'S")
+
+ArsenalSection:NewButton("Owl Hub", "Executes OwlHub For Arsenal!", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+ArsenalSection:NewButton("Bolts HubV5", "Executes Bolts HubV5 For Arsenal!", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main"))();
+end)
